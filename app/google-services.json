@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273554484597",
+    "firebase_url": "https://expoeetepa-math.firebaseio.com",
+    "project_id": "expoeetepa-math",
+    "storage_bucket": "expoeetepa-math.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273554484597:android:f45a7d1a2118a4ed",
+        "android_client_info": {
+          "package_name": "samuel.developer.projectoexpoeetepa_math"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273554484597-mrukojugdh6mtehnou0i3mdjl2b02vnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "samuel.developer.projectoexpoeetepa_math",
+            "certificate_hash": "e799d0440b7a8479e29526b67477cb6184fc9ed3"
+          }
+        },
+        {
+          "client_id": "273554484597-m0bvgj33pf6eiemhcnb8pl559rl08bol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6k6I-uxXHMe5lODelE_qS35Ohl0om38U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273554484597-m0bvgj33pf6eiemhcnb8pl559rl08bol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menuprincipal"
+            android:icon="@drawable/ic_reorder_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_configuracaoConta"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configurar Conta" />
+
+          <item
+            android:icon="@drawable/ic_exit_to_app_gray24dp"
+            android:title="Deslogar"
+            android:id="@+id/Deslogar"
+            />
+
+    </group>
+    <group android:visible="true" android:checkableBehavior="single">
+         <item
+            android:id="@+id/nav_sobre"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="Sobre" />
+
+        <item
+            android:title="Contact Us"
+            android:id="@+id/emailDevelopers"
+            android:icon="@drawable/ic_email_whie"
+            />
+
+        <item
+            android:title="Sair do App"
+            android:id="@+id/sairdoApp"
+            android:icon="@drawable/ic_arrow_back_gray24dp"/>
+    </group>
+</menu>
