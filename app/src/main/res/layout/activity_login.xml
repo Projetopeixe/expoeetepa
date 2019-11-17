@@ -7,14 +7,19 @@
     android:background="@color/colorPrimary"
     tools:context=".activity.LoginActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imagedoUsuarioNav"
-        android:layout_width="200dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="234dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:civ_border_color="#DFDADA"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

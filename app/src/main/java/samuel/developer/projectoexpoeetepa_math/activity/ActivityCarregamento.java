@@ -5,11 +5,13 @@ import android.os.Bundle;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityCarregamento extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_carregamento);
+        getSupportActionBar().hide();
+
     }
 }
