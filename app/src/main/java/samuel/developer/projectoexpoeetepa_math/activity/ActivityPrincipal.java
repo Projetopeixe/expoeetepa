@@ -45,7 +45,7 @@ public class ActivityPrincipal extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        setTitle("");
 
 
 

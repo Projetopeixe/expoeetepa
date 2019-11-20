@@ -121,6 +121,7 @@
         app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
         app:layout_constraintTop_toTopOf="@+id/textInputLayout"
-        app:srcCompat="@drawable/ic_email_whie" />
+        app:srcCompat="@drawable/ic_email_whie"
+        android:layout_marginLeft="8dp" />
 
 </android.support.constraint.ConstraintLayout>
