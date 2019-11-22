@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.fase2.Q1F2">
+    tools:context=".activity.fase1.Q2F1">
 
 </android.support.constraint.ConstraintLayout>

@@ -1,15 +1,15 @@
-package samuel.developer.projectoexpoeetepa_math.activity.fase1;
+package samuel.developer.projectoexpoeetepa_math.activity.fase3;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 
-public class Q2F1 extends AppCompatActivity {
+public class Q4F3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q1_f2);
+        setContentView(R.layout.activity_q4_f3);
     }
 }
