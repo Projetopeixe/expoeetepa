@@ -16,15 +16,113 @@
         tools:showIn="@layout/app_bar_activity_principal">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="948dp"
-            android:layout_height="929dp"
-            android:layout_marginTop="80dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnFase1"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fases2"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/fase1" />
+
+        <ImageView
+            android:id="@+id/btnFase2"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase1"
+            app:srcCompat="@drawable/fase2" />
+
+        <ImageView
+            android:id="@+id/btnFase3"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.284"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase2"
+            app:srcCompat="@drawable/fase3" />
+
+        <ImageView
+            android:id="@+id/btnFase4"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase3"
+            app:srcCompat="@drawable/fase4" />
+
+        <ImageView
+            android:id="@+id/btnFase5"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase4"
+            app:srcCompat="@drawable/fase5" />
+
+        <ImageView
+            android:id="@+id/btnFase6"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.284"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase5"
+            app:srcCompat="@drawable/fase6" />
+
+        <ImageView
+            android:id="@+id/btnFase7"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase6"
+            app:srcCompat="@drawable/fase7" />
+
+        <ImageView
+            android:id="@+id/btnFase8"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase7"
+            app:srcCompat="@drawable/fase8" />
+
+        <ImageView
+            android:id="@+id/btnFase9"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnFase10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.284"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase8"
+            app:srcCompat="@drawable/fase9" />
+
+        <ImageView
+            android:id="@+id/btnFase10"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFase9"
+            app:srcCompat="@drawable/fase10" />
+
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

@@ -1,33 +1,25 @@
 package samuel.developer.projectoexpoeetepa_math.activity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
-import android.security.keystore.UserPresenceUnavailableException;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.storage.StorageReference;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.helper.UsuarioFirebase;
-import samuel.developer.projectoexpoeetepa_math.model.Usuario;
 
 public class ActivityPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,8 +28,7 @@ public class ActivityPrincipal extends AppCompatActivity
 
     private TextView nomedoUsuario, emailUsera;
     private CircleImageView imagemUser;
-
-
+    private ImageView btnF1, btnF2, btnF3, btnF4, btnF5, btnF6, btnF7, btnF8, btnF9, btnF10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,25 +38,80 @@ public class ActivityPrincipal extends AppCompatActivity
         setSupportActionBar(toolbar);
         setTitle("");
 
-
-
+        carregarBotoesFases();
         nomedoUsuario = findViewById(R.id.nomeDoUsuarioTela);
         imagemUser = findViewById(R.id.imagedoUsuarioNav);
         emailUsera = findViewById(R.id.emailUserNav);
 
-
-        //carregarDadosUser();
-
-
-
-        /*FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        btnF1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+
             }
-        });*/
+        });
+
+        btnF2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnF10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -74,8 +120,20 @@ public class ActivityPrincipal extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+    }
 
 
+    public void carregarBotoesFases(){
+        btnF1 = findViewById(R.id.btnFase1);
+        btnF2 = findViewById(R.id.btnFase2);
+        btnF3 = findViewById(R.id.btnFase3);
+        btnF4 = findViewById(R.id.btnFase4);
+        btnF5 = findViewById(R.id.btnFase5);
+        btnF6 = findViewById(R.id.btnFase6);
+        btnF7 = findViewById(R.id.btnFase7);
+        btnF8 = findViewById(R.id.btnFase8);
+        btnF9 = findViewById(R.id.btnFase9);
+        btnF10 = findViewById(R.id.btnFase10);
     }
 
     @Override
@@ -87,28 +145,6 @@ public class ActivityPrincipal extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
-     /*@Override
-   public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_principal, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
 
      public void carregarDadosUser(){
          FirebaseUser usuarioatual = UsuarioFirebase.getUsuarioAtual();
@@ -159,12 +195,10 @@ public class ActivityPrincipal extends AppCompatActivity
     public void abriConfiguracoes(){
         Intent intent = new Intent(ActivityPrincipal.this, ConfiguracaoContaActivity.class);
         startActivity(intent);
-
     }
 
     public void deslogarUsuario(){
             auth.signOut();
-
     }
 
 }
