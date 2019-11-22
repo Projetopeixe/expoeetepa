@@ -16,7 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.fase6.Q10F6"></activity>
+        <activity android:name=".activity.fase7.Q10F7"></activity>
+        <activity android:name=".activity.fase7.Q9F7" />
+        <activity android:name=".activity.fase7.Q8F7" />
+        <activity android:name=".activity.fase7.Q7F7" />
+        <activity android:name=".activity.fase7.Q6F7" />
+        <activity android:name=".activity.fase7.Q5F7" />
+        <activity android:name=".activity.fase7.Q4F7" />
+        <activity android:name=".activity.fase7.Q3F7" />
+        <activity android:name=".activity.fase7.Q2F7" />
+        <activity android:name=".activity.fase6.Q10F6" />
         <activity android:name=".activity.fase6.Q9F6" />
         <activity android:name=".activity.fase6.Q8F6" />
         <activity android:name=".activity.fase6.Q7F6" />
