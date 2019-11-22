@@ -2,18 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="samuel.developer.projectoexpoeetepa_math">
 
-
     <uses-feature
         android:name="android.hardware.camera2"
-        android:required="true"
+        android:required="true" />
 
-        />
-
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
-    <uses-permission
-        android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -22,11 +16,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.fase10.Q1F10"></activity>
+        <activity android:name=".activity.fase9.Q1F9" />
+        <activity android:name=".activity.fase8.Q1F8" />
+        <activity android:name=".activity.fase7.Q1F7" />
+        <activity android:name=".activity.fase6.Q1F6" />
+        <activity android:name=".activity.fase5.Q1F5" />
+        <activity android:name=".activity.fase4.Q1F4" />
+        <activity android:name=".activity.fase3.Q1F3" />
+        <activity android:name=".activity.fase2.Q1F2" />
+        <activity android:name=".activity.fase1.Q10F1" />
+        <activity android:name=".activity.fase1.Q9F1" />
+        <activity android:name=".activity.fase1.Q8F1" />
+        <activity android:name=".activity.fase1.Q7F1" />
+        <activity android:name=".activity.fase1.Q6F1" />
+        <activity android:name=".activity.fase1.Q5F1" />
+        <activity android:name=".activity.fase1.Q4F1" />
+        <activity android:name=".activity.fase1.Q3F1" />
+        <activity android:name=".activity.fase1.Q2F1" />
+        <activity android:name=".activity.fase1.Q1F1" />
         <activity
             android:name=".activity.ConfiguracaoContaActivity"
-            android:parentActivityName=".activity.ActivityPrincipal">
-
-        </activity>
+            android:parentActivityName=".activity.ActivityPrincipal" />
         <activity
             android:name=".activity.ActivityPrincipal"
             android:label="@string/title_activity_principal"

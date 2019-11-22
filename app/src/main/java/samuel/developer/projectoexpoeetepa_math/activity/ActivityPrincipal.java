@@ -29,6 +29,7 @@ public class ActivityPrincipal extends AppCompatActivity
     private TextView nomedoUsuario, emailUsera;
     private CircleImageView imagemUser;
     private ImageView btnF1, btnF2, btnF3, btnF4, btnF5, btnF6, btnF7, btnF8, btnF9, btnF10;
+    public static int pontuacao = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,7 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
             }
         });
