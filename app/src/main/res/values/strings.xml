@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Projecto Expoeetepa - Math</string>
+    <string name="app_name">Easy Math</string>
     <string name="txt_insira_email">Insira seu e-mail</string>
     <string name="txt_insira_senha">Insira sua senha</string>
     <string name="btn_logar">Logar</string>
@@ -23,4 +23,14 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="q1_f1">Calcule a expressão a seguir (x – 234 = y). Considerando X=801.</string>
+    <string name="q2_f1">235 + 140 + 2</string>
+    <string name="q3_f1">2 x 2 x 2 x 2 x 2  x 10 -100</string>
+    <string name="q4_f1">Qual é  o resultado da multiplicação a seguir: \n \n(804 x 0) x 777</string>
+    <string name="q5_f1">Em um banheiro há uma parede com 15 fileiras com 10 azulejos e outra parede com 13 fileiras com 10. Informe a quantidade de azulejos desse banheiro. </string>
+    <string name="q1_f2">Quanto é 10% de 1000?</string>
+    <string name="q2_f2">Quanto é 25% de 10.000?</string>
+    <string name="q3_f2">Uma escola recebeu 150 cadernos. Contando somente com a distribuição para os alunos do período da tarde foram 50% dos cadernos. Quantos sobraram?</string>
+    <string name="q4_f2">Considere uma mamadeira com capacidade de 250ml. Com um litro de leite, é possível preparar quantas mamadeiras?</string>
+    <string name="q5_f2">Maria tem 1,45 m de altura e seu irmão tem 1,27 m.  Quantos centímetros ela tem a mais que o irmão?</string>
 </resources>

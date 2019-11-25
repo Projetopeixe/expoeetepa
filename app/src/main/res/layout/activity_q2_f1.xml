@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.fase1.Q1F1">
+    tools:context=".activity.fase1.Q2F1">
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView3"
@@ -16,10 +16,10 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/bg_edit_text"
-        android:padding="8sp"
-        android:text="@string/q1_f1"
+        android:gravity="center_horizontal"
+        android:text="@string/q2_f1"
         android:textColor="@android:color/black"
-        android:textSize="26sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="52dp"
         android:layout_marginTop="180dp"
         android:background="@drawable/bg_edit_text"
-        android:text="567"
+        android:text="374"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -57,7 +57,7 @@
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:background="@drawable/bg_edit_text"
-        android:text="587"
+        android:text="375"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:background="@drawable/bg_edit_text"
-        android:text="600"
+        android:text="377"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,7 +87,7 @@
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:background="@drawable/bg_edit_text"
-        android:text="750"
+        android:text="380"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,4 +102,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.50121653" />
+
 </android.support.constraint.ConstraintLayout>

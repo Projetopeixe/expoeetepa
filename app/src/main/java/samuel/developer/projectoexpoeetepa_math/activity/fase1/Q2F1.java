@@ -10,6 +10,6 @@ public class Q2F1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q1_f2);
+        setContentView(R.layout.activity_q2_f1);
     }
 }

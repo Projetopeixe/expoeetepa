@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import de.hdodenhof.circleimageview.CircleImageView;
 import samuel.developer.projectoexpoeetepa_math.R;
+import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q1F1;
 import samuel.developer.projectoexpoeetepa_math.helper.UsuarioFirebase;
 
 public class ActivityPrincipal extends AppCompatActivity
@@ -47,7 +48,9 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F1.class);
+                startActivity(intent);
+                finish();
             }
         });
 
