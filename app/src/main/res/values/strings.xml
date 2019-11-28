@@ -33,4 +33,9 @@
     <string name="q3_f2">Uma escola recebeu 150 cadernos. Contando somente com a distribuição para os alunos do período da tarde foram 50% dos cadernos. Quantos sobraram?</string>
     <string name="q4_f2">Considere uma mamadeira com capacidade de 250ml. Com um litro de leite, é possível preparar quantas mamadeiras?</string>
     <string name="q5_f2">Maria tem 1,45 m de altura e seu irmão tem 1,27 m.  Quantos centímetros ela tem a mais que o irmão?</string>
+    <string name="q1_f3">Qual o valor de x na expressão a seguir: \n45 - 35 - 25 - 15 = x.</string>
+    <string name="q2_f3">Marlene está lendo um livro com 352 páginas. Em 3 horas de leitura, ela leu 48 páginas. Se ela mantiver o ritmo de leitura, quanto tempo levará para ler o livro todo?</string>
+    <string name="q3_f3">Um navio foi abastecido com comida suficiente para alimentar 14 pessoas durante 45 dias. Se 18 pessoas embarcarem nesse navio, para quantos dias, no máximo, as reservas de alimento serão suficientes?</string>
+    <string name="q4_f3">Um grupo de 14 amigos comprou 8 pizzas. Eles comeram todas as pizzas, sem sobrar nada. Se cada menino comeu uma pizza inteira e cada menina comeu meia pizza, quantas meninas havia no grupo?</string>
+    <string name="q5_f3">Uma montadora de automóveis demora 8 dias para produzir 200 veículos, trabalhando 9 horas por dia. Quantos veículos montará em 15 dias, funcionando 12 horas por dia?</string>
 </resources>
