@@ -48,4 +48,9 @@
     <string name="q3_f5">Qual o valor de x no triângulo abaixo?</string>
     <string name="q4_f5">Qual o valor de y no triângulo abaixo?</string>
     <string name="q5_f5">Calcule o comprimento de uma circunferência, cujo raio mede 10 cm</string>
+    <string name="q1_f6">Calcule o comprimento de uma circunferência, cujo o raio mede 2 cm:</string>
+    <string name="q2_f6">Manoel é um fazendeiro que dispõe de certo capital para comprar certo número de carneiros. Pagando R$ 20,00 por carneiro, faltam-lhe R$ 40,00; e pagando R$ 16,00, sobram-lhe R$ 20,00. Quantos carneiros Manoel quer comprar?</string>
+    <string name="q3_f6">Um rato está 30 metros à frente de um gato que o persegue. Enquanto o rato corre 8 metros, o gato corre 11 metros. Qual a distância que o gato terá de percorrer para alcançar o rato?</string>
+    <string name="q4_f6">Calcule a média aritmética simples de 15;48;36</string>
+    <string name="q5_f6">Calcule a média aritmética simples de 18;25;32</string>
 </resources>
