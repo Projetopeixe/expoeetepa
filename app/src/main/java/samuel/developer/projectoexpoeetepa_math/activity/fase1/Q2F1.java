@@ -2,6 +2,7 @@ package samuel.developer.projectoexpoeetepa_math.activity.fase1;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class Q2F1 extends AppCompatActivity {
     private Button alternativaC;
     private Button alternativaD;
     private ProgressBar timeLine;
+    private MediaPlayer mediaPlayerCerta, mediaPlayerErrada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +65,12 @@ public class Q2F1 extends AppCompatActivity {
         alternativaC = findViewById(R.id.alternativaC);
         alternativaD = findViewById(R.id.alternativaD);
         timeLine = findViewById(R.id.progressBar2);
+        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.questaocerta);
+        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.questaoerrada);
     }
 
     public void questaoCerta(){
+        executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acertouu!");
         builder.setMessage("Parabéns! Resposta Correta!");
@@ -82,9 +87,10 @@ public class Q2F1 extends AppCompatActivity {
     }
 
     public void questaoErrada(){
+        executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
-        builder.setMessage("Parabéns! Resposta Correta!");
+        builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -93,7 +99,6 @@ public class Q2F1 extends AppCompatActivity {
         builder.create();
         builder.show();
     }
-
     public void carregamentoTempo(){
         new Thread(
                 new Runnable() {
@@ -118,5 +123,15 @@ public class Q2F1 extends AppCompatActivity {
                 }
         ).start();
     }
-    public void tempoEsgotado(){}
+
+    public void executarSomCerta(){
+        if (mediaPlayerCerta != null){
+            mediaPlayerCerta.start();
+        }
+    }
+    public void executarSomErrada(){
+        if(mediaPlayerErrada != null){
+            mediaPlayerErrada.start();
+        }
+    }
 }

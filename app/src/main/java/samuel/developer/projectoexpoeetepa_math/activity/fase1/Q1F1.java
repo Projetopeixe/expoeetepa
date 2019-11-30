@@ -3,6 +3,7 @@ package samuel.developer.projectoexpoeetepa_math.activity.fase1;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,8 +20,7 @@ public class Q1F1 extends AppCompatActivity {
     private Button alternativaC;
     private Button alternativaD;
     private ProgressBar timeLine;
-    /*
-    */
+    private MediaPlayer mediaPlayerCerta, mediaPlayerErrada;
 
 
     @Override
@@ -67,9 +67,12 @@ public class Q1F1 extends AppCompatActivity {
         alternativaB = findViewById(R.id.alternativaB);
         alternativaC = findViewById(R.id.alternativaC);
         alternativaD = findViewById(R.id.alternativaD);
+        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.questaocerta);
+        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.questaoerrada);
     }
 
     public void questaoCerta(){
+        executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acertouu!");
         builder.setMessage("Parabéns! Resposta Correta!");
@@ -86,9 +89,10 @@ public class Q1F1 extends AppCompatActivity {
     }
 
     public void questaoErrada(){
+        executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
-        builder.setMessage("Parabéns! Resposta Correta!");
+        builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -120,5 +124,16 @@ public class Q1F1 extends AppCompatActivity {
                     }
                 }
         ).start();
+    }
+
+    public void executarSomCerta(){
+        if (mediaPlayerCerta != null){
+            mediaPlayerCerta.start();
+        }
+    }
+    public void executarSomErrada(){
+        if(mediaPlayerErrada != null){
+            mediaPlayerErrada.start();
+        }
     }
 }
