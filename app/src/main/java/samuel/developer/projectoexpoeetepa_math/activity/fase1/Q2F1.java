@@ -65,8 +65,8 @@ public class Q2F1 extends AppCompatActivity {
         alternativaC = findViewById(R.id.alternativaC);
         alternativaD = findViewById(R.id.alternativaD);
         timeLine = findViewById(R.id.progressBar2);
-        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.questaocerta);
-        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.questaoerrada);
+        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.acertou);
+        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.erou);
     }
 
     public void questaoCerta(){

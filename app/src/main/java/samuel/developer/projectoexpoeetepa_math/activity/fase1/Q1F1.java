@@ -67,8 +67,8 @@ public class Q1F1 extends AppCompatActivity {
         alternativaB = findViewById(R.id.alternativaB);
         alternativaC = findViewById(R.id.alternativaC);
         alternativaD = findViewById(R.id.alternativaD);
-        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.questaocerta);
-        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.questaoerrada);
+        mediaPlayerCerta = MediaPlayer.create(getApplicationContext(), R.raw.acertou);
+        mediaPlayerErrada = MediaPlayer.create(getApplicationContext(), R.raw.erou);
     }
 
     public void questaoCerta(){
