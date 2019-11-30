@@ -50,7 +50,7 @@ public class ActivityPrincipal extends AppCompatActivity
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Q1F1.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

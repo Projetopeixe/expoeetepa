@@ -24,6 +24,7 @@ public class Q2F1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q2_f1);
         carregarComponentes();
+        carregamentoTempo();
 
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,5 +94,29 @@ public class Q2F1 extends AppCompatActivity {
         builder.show();
     }
 
+    public void carregamentoTempo(){
+        new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int i = 0; i<= 120; i++) {
+                            final int progresso = i;
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    timeLine.setProgress(progresso);
+                                }
+                            });
+
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException   e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+        ).start();
+    }
     public void tempoEsgotado(){}
 }

@@ -24,18 +24,19 @@ public class Q4F1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q4_f1);
         carregarComponentes();
+        carregamentoTempo();
 
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoErrada();
+                questaoCerta();
             }
         });
 
         alternativaB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoCerta();
+                questaoErrada();
 
             }
         });
@@ -70,7 +71,7 @@ public class Q4F1 extends AppCompatActivity {
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), Q3F1.class);
+                Intent intent = new Intent(getApplicationContext(), Q5F1.class);
                 startActivity(intent);
                 finish();
             }
@@ -92,5 +93,29 @@ public class Q4F1 extends AppCompatActivity {
         builder.show();
     }
 
+    public void carregamentoTempo(){
+        new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int i = 0; i<= 120; i++) {
+                            final int progresso = i;
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    timeLine.setProgress(progresso);
+                                }
+                            });
+
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException   e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+        ).start();
+    }
     public void tempoEsgotado(){}
 }

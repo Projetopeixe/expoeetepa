@@ -19,9 +19,7 @@ public class Q1F1 extends AppCompatActivity {
     private Button alternativaC;
     private Button alternativaD;
     private ProgressBar timeLine;
-    /*private static final String CONCLUIDO = "Conclusao";
-    SharedPreferences preferences = getSharedPreferences(CONCLUIDO, 0);
-    SharedPreferences.Editor editor = preferences.edit();
+    /*
     */
 
 
@@ -30,6 +28,7 @@ public class Q1F1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q1_f1);
         carregarComponentes();
+        carregamentoTempo();
 
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,5 +96,29 @@ public class Q1F1 extends AppCompatActivity {
         });
         builder.create();
         builder.show();
+    }
+    public void carregamentoTempo(){
+        new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int i = 0; i<= 120; i++) {
+                            final int progresso = i;
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    timeLine.setProgress(progresso);
+                                }
+                            });
+
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException   e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+        ).start();
     }
 }
