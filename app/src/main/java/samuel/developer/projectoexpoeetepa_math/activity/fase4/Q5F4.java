@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
@@ -24,6 +25,33 @@ public class Q5F4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q5_f4);
+        carregarComponentes();
+        carregamentoTempo();
+
+        alternativaA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                questaoErrada();
+            }
+        });
+        alternativaB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                questaoCerta();
+            }
+        });
+        alternativaC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                questaoErrada();
+            }
+        });
+        alternativaD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                questaoErrada();
+            }
+        });
     }
     private void carregarComponentes(){
         alternativaA = findViewById(R.id.alternativaA);
