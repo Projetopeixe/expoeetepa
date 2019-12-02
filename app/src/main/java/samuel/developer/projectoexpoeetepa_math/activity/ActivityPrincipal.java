@@ -182,6 +182,9 @@ public class ActivityPrincipal extends AppCompatActivity
             finish();
 
         } else if (id == R.id.nav_sobre) {
+            Intent intent = new Intent(ActivityPrincipal.this, ActivitySobre.class);
+            startActivity(intent);
+            finish();
 
         }else if (id == R.id.emailDevelopers){
 
