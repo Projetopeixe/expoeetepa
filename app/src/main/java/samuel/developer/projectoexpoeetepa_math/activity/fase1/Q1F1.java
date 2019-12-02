@@ -22,7 +22,6 @@ public class Q1F1 extends AppCompatActivity {
     private ProgressBar timeLine;
     private MediaPlayer mediaPlayerCerta, mediaPlayerErrada;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
