@@ -27,10 +27,9 @@ public class ActivityPrincipal extends AppCompatActivity
 
     private FirebaseAuth auth = FirebaseAuth.getInstance();
 
-    private TextView nomedoUsuario, emailUsera;
-    private CircleImageView imagemUser;
+
     private ImageView btnF1, btnF2, btnF3, btnF4, btnF5, btnF6, btnF7, btnF8, btnF9, btnF10;
-    public static int pontuacao = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +40,8 @@ public class ActivityPrincipal extends AppCompatActivity
         setTitle("");
 
         carregarBotoesFases();
-        nomedoUsuario = findViewById(R.id.nomeDoUsuarioTela);
-        imagemUser = findViewById(R.id.imagedoUsuarioNav);
-        emailUsera = findViewById(R.id.emailUserNav);
+
+
 
         btnF1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,18 +149,7 @@ public class ActivityPrincipal extends AppCompatActivity
         }
     }
 
-     public void carregarDadosUser(){
-         FirebaseUser usuarioatual = UsuarioFirebase.getUsuarioAtual();
-         Uri url  = usuarioatual.getPhotoUrl();
-         if (url != null){
-             Glide.with(ActivityPrincipal.this).load(url).into(imagemUser);
-         }else{
-             imagemUser.setImageResource(R.drawable.padrao);
-         }
-         FirebaseUser usuario = UsuarioFirebase.getUsuarioAtual();
 
-         nomedoUsuario.setText(usuario.getDisplayName());
-     }
 
 
     @SuppressWarnings("StatementWithEmptyBody")
