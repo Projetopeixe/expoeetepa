@@ -184,9 +184,10 @@ public class ActivityPrincipal extends AppCompatActivity
         } else if (id == R.id.nav_sobre) {
             Intent intent = new Intent(ActivityPrincipal.this, ActivitySobre.class);
             startActivity(intent);
-            finish();
+
 
         }else if (id == R.id.emailDevelopers){
+            enviarEmail();
 
         }else  if (id == R.id.sairdoApp){
 
@@ -207,6 +208,17 @@ public class ActivityPrincipal extends AppCompatActivity
 
     public void deslogarUsuario(){
             auth.signOut();
+    }
+
+    public void enviarEmail(){
+        Intent email = new Intent(Intent.ACTION_SEND);
+        email.putExtra(Intent.EXTRA_EMAIL, new String[]{"easymathoficial19@gmail.com"});
+        email.putExtra(Intent.EXTRA_SUBJECT, "Contato pelo App");
+        email.putExtra(Intent.EXTRA_TEMPLATE, "Mensagem automática");
+
+        email.setType("message/rfc822");
+        startActivity(Intent.createChooser(email, "Escolha o App de e-mail:"));
+
     }
 
 }
