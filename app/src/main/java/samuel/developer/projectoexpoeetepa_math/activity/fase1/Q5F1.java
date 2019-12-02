@@ -135,4 +135,7 @@ public class Q5F1 extends AppCompatActivity {
             mediaPlayerErrada.start();
         }
     }
+    public void tempoEsgotado(){
+
+    }
 }

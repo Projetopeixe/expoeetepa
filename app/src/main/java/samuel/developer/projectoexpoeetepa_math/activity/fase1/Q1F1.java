@@ -112,6 +112,7 @@ public class Q1F1 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+
                                 }
                             });
 
@@ -119,6 +120,9 @@ public class Q1F1 extends AppCompatActivity {
                                 Thread.sleep(1000);
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
+                            }
+                            if(progresso == 120){
+                                tempoEsgotado();
                             }
                         }
                     }
@@ -135,5 +139,19 @@ public class Q1F1 extends AppCompatActivity {
         if(mediaPlayerErrada != null){
             mediaPlayerErrada.start();
         }
+    }
+
+    public void tempoEsgotado(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Acabou o seu tempo, negah!");
+        builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
+        builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+              finish();
+            }
+        });
+        builder.create();
+        builder.show();
     }
 }
