@@ -20,6 +20,15 @@ import com.google.firebase.auth.FirebaseUser;
 import de.hdodenhof.circleimageview.CircleImageView;
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q1F1;
+import samuel.developer.projectoexpoeetepa_math.activity.fase10.Q1F10;
+import samuel.developer.projectoexpoeetepa_math.activity.fase2.Q1F2;
+import samuel.developer.projectoexpoeetepa_math.activity.fase3.Q1F3;
+import samuel.developer.projectoexpoeetepa_math.activity.fase4.Q1F4;
+import samuel.developer.projectoexpoeetepa_math.activity.fase5.Q1F5;
+import samuel.developer.projectoexpoeetepa_math.activity.fase6.Q1F6;
+import samuel.developer.projectoexpoeetepa_math.activity.fase7.Q1F7;
+import samuel.developer.projectoexpoeetepa_math.activity.fase8.Q1F8;
+import samuel.developer.projectoexpoeetepa_math.activity.fase9.Q1F9;
 import samuel.developer.projectoexpoeetepa_math.helper.UsuarioFirebase;
 
 public class ActivityPrincipal extends AppCompatActivity
@@ -55,6 +64,8 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Q1F2.class);
+                startActivity(intent);
 
 
             }
@@ -63,56 +74,64 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F3.class);
+                startActivity(intent);
             }
         });
 
         btnF4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F4.class);
+                startActivity(intent);
             }
         });
 
         btnF5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F5.class);
+                startActivity(intent);
             }
         });
 
         btnF6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F6.class);
+                startActivity(intent);
             }
         });
 
         btnF7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F7.class);
+                startActivity(intent);
             }
         });
 
         btnF8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F8.class);
+                startActivity(intent);
             }
         });
 
         btnF9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F9.class);
+                startActivity(intent);
             }
         });
 
         btnF10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), Q1F10.class);
+                startActivity(intent);
             }
         });
 
