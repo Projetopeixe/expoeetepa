@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+// olha direitinho
 import java.security.MessageDigest;
 
 import samuel.developer.projectoexpoeetepa_math.R;

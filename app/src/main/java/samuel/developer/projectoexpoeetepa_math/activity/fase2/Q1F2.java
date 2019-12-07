@@ -13,6 +13,8 @@ import android.widget.ProgressBar;
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q2F1;
 
+// olha direitinho
+
 public class Q1F2 extends AppCompatActivity {
 
     private Button alternativaA;
