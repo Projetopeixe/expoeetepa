@@ -75,6 +75,7 @@ public class Q5F2 extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
+                desbloquearFase();
                 startActivity(intent);
                 finish();
             }
@@ -148,4 +149,6 @@ public class Q5F2 extends AppCompatActivity {
         builder.create();
         builder.show();
     }
+
+    public void desbloquearFase(){}
 }
