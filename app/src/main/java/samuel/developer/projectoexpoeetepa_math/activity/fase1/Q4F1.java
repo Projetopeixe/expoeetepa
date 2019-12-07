@@ -136,6 +136,16 @@ public class Q4F1 extends AppCompatActivity {
         }
     }
     public void tempoEsgotado(){
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Acabou o seu tempo!");
+        builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
+        builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.create();
+        builder.show();
     }
 }

@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
-// olha direitinho
+import samuel.developer.projectoexpoeetepa_math.activity.ActivityPrincipal;
+
 public class Q5F6 extends AppCompatActivity {
 
     private Button alternativaA;
@@ -75,8 +76,8 @@ public class Q5F6 extends AppCompatActivity {
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), Q5F6.class);
-                startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
+                desbloquearFase();
                 finish();
             }
         });
@@ -152,5 +153,7 @@ public class Q5F6 extends AppCompatActivity {
         builder.create();
         builder.show();
     }
+
+    public void desbloquearFase(){}
 }
 

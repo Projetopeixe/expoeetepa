@@ -75,7 +75,7 @@ public class Q4F6 extends AppCompatActivity {
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), Q4F6.class);
+                Intent intent = new Intent(getApplicationContext(), Q5F6.class);
                 startActivity(intent);
                 finish();
             }
