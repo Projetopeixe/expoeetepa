@@ -32,14 +32,14 @@ public class Q3F8 extends AppCompatActivity {
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoCerta();
+                questaoErrada();
             }
         });
 
         alternativaB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoErrada();
+                questaoCerta();
 
             }
         });
