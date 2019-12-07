@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+// olha direitinho
+
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.ActivityPrincipal;
 

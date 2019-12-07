@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
-
+// olha direitinho
 public class Q4F6 extends AppCompatActivity {
 
     private Button alternativaA;
