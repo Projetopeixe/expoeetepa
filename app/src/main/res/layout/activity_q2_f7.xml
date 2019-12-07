@@ -20,6 +20,8 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:background="@drawable/bg_edit_text"
+        android:padding="3sp"
         android:text="@string/q2_f7"
         android:textColor="@android:color/black"
         android:textSize="26sp"

@@ -144,7 +144,7 @@ public class Q1F1 extends AppCompatActivity {
 
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acabou o seu tempo, negah!");
+        builder.setTitle("Acabou o seu tempo!");
         builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override
