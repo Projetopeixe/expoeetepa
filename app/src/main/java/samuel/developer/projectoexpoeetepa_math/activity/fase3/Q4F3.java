@@ -76,7 +76,7 @@ public class Q4F3 extends AppCompatActivity {
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), Q4F3.class);
+                Intent intent = new Intent(getApplicationContext(), Q5F3.class);
                 startActivity(intent);
                 finish();
             }
@@ -142,7 +142,7 @@ public class Q4F3 extends AppCompatActivity {
 
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acabou o seu tempo, negah!");
+        builder.setTitle("Acabou o seu tempo!");
         builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override

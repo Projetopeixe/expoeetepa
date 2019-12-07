@@ -1,9 +1,12 @@
 package samuel.developer.projectoexpoeetepa_math.activity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.icu.text.UnicodeSetSpanner;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -14,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -29,6 +34,7 @@ import samuel.developer.projectoexpoeetepa_math.activity.fase6.Q1F6;
 import samuel.developer.projectoexpoeetepa_math.activity.fase7.Q1F7;
 import samuel.developer.projectoexpoeetepa_math.activity.fase8.Q1F8;
 import samuel.developer.projectoexpoeetepa_math.activity.fase9.Q1F9;
+import samuel.developer.projectoexpoeetepa_math.helper.ControllerFases;
 import samuel.developer.projectoexpoeetepa_math.helper.UsuarioFirebase;
 
 public class ActivityPrincipal extends AppCompatActivity
@@ -44,97 +50,134 @@ public class ActivityPrincipal extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle("");
 
         carregarBotoesFases();
 
-        FirebaseUser usuarioatual = UsuarioFirebase.getUsuarioAtual();
-        String nom = usuarioatual.getDisplayName();
-        nome.setText(nom);
 
-
+        final ControllerFases controll = new ControllerFases();
         btnF1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F1.class);
-                startActivity(intent);
 
+                if(controll.getFase1() == 1) {
+                    Intent intent = new Intent(getApplicationContext(), Q1F1.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F2.class);
-                startActivity(intent);
-
-
+                if(controll.getFase2() == 1) {
+                    Intent intent = new Intent(getApplicationContext(), Q1F2.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F3.class);
-                startActivity(intent);
+                if(controll.getFase3() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F3.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F4.class);
-                startActivity(intent);
+                if (controll.getFase4() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F4.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
         btnF5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F5.class);
-                startActivity(intent);
+                if(controll.getFase5() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F5.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
         btnF6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F6.class);
-                startActivity(intent);
+                if(controll.getFase6() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F6.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F7.class);
-                startActivity(intent);
+                if (controll.getFase7() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F7.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F8.class);
-                startActivity(intent);
+                if(controll.getFase8() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F8.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F9.class);
-                startActivity(intent);
+                if (controll.getFase9() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F9.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnF10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Q1F10.class);
-                startActivity(intent);
+                if(controll.getFase10() == 1){
+                    Intent intent = new Intent(getApplicationContext(), Q1F10.class);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -146,8 +189,6 @@ public class ActivityPrincipal extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
     }
-
-
     public void carregarBotoesFases(){
         btnF1 = findViewById(R.id.btnFase1);
         btnF2 = findViewById(R.id.btnFase2);
@@ -171,9 +212,6 @@ public class ActivityPrincipal extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
-
-
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -228,7 +266,5 @@ public class ActivityPrincipal extends AppCompatActivity
 
         email.setType("message/rfc822");
         startActivity(Intent.createChooser(email, "Escolha o App de e-mail:"));
-
     }
-
 }
