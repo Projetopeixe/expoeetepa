@@ -36,7 +36,7 @@ public class ActivityPrincipal extends AppCompatActivity
 
     private FirebaseAuth auth = FirebaseAuth.getInstance();
 
-
+    private TextView nome;
     private ImageView btnF1, btnF2, btnF3, btnF4, btnF5, btnF6, btnF7, btnF8, btnF9, btnF10;
 
 
@@ -50,6 +50,9 @@ public class ActivityPrincipal extends AppCompatActivity
 
         carregarBotoesFases();
 
+        FirebaseUser usuarioatual = UsuarioFirebase.getUsuarioAtual();
+        String nom = usuarioatual.getDisplayName();
+        nome.setText(nom);
 
 
         btnF1.setOnClickListener(new View.OnClickListener() {
@@ -156,6 +159,7 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF8 = findViewById(R.id.btnFase8);
         btnF9 = findViewById(R.id.btnFase9);
         btnF10 = findViewById(R.id.btnFase10);
+        nome = findViewById(R.id.nomeUserOption);
     }
 
     @Override
