@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.ActivityPrincipal;
+import samuel.developer.projectoexpoeetepa_math.helper.ControllerFases;
 
 public class Q5F1 extends AppCompatActivity {
 
@@ -23,7 +24,6 @@ public class Q5F1 extends AppCompatActivity {
     private Button alternativaC;
     private Button alternativaD;
     private ProgressBar timeLine;
-    private static final String CONCLUIDO = "Conclusao";
     private MediaPlayer mediaPlayerCerta, mediaPlayerErrada;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,8 +152,10 @@ public class Q5F1 extends AppCompatActivity {
         builder.show();
     }
 
-    public void desbloquearFase(){}
-
+    public void desbloquearFase(){
+        ControllerFases controll = new ControllerFases();
+        controll.setFase2(1);
+    }
 
 
 }
