@@ -25,8 +25,8 @@
     <string name="menu_send">Send</string>
 
     <string name="q1_f1">Calcule a expressão a seguir (x – 234 = y). Considerando X=801.</string>
-    <string name="q2_f1">235 + 140 + 2 = z</string>
-    <string name="q3_f1">2 x 2 x 2 x 2 x 2  x 10 -100</string>
+    <string name="q2_f1">Informe o valor de z na expressão: 235 + 140 + 2 = z</string>
+    <string name="q3_f1">Informe o valor da expressão: 2 x 2 x 2 x 2 x 2  x 10 -100</string>
     <string name="q4_f1">Qual é  o resultado da multiplicação a seguir: \n \n(804 x 0) x 777</string>
     <string name="q5_f1">Em um banheiro há uma parede com 15 fileiras com 10 azulejos e outra parede com 13 fileiras com 10. Informe a quantidade de azulejos desse banheiro. </string>
 
@@ -79,8 +79,8 @@
     <string name="q5_f9">Uma rampa lisa de 7 metros de comprimento faz ângulo de 25° com plano horizontal. Qual a altura máxima, em metros, dessa rampa? (seno 25° = 0,422)</string>
 
     <string name="q1_f10">Numa escola de apenas 800 alunos, sabe-se que 200 deles gostam de pagode; 300 de rock e 130 de pagode e rock. Quantos alunos não gostam nem de pagode nem de rock?</string>
-    <string name="q2_f10"></string>
-    <string name="q3_f10"></string>
-    <string name="q4_f10"></string>
-    <string name="q5_f10"></string>
+    <string name="q2_f10">Um número é dividido em duas partes diretamente proporcionais a 3 e a 2, respectivamente. Dado que o quadrado da primeira parte menos quarenta vezes a segunda parte é 2.000, determine o número.</string>
+    <string name="q3_f10">Assinale a opção que apresenta corretamente o oitavo termo de uma P.A, onde o quinto termo é igual a 6 e o décimo sétimo termo é igual a 30. </string>
+    <string name="q4_f10">Uma caixa de fósforos tem 1 cm de altura e o comprimento tem 2 cm a mais que a largura. Se o volume da caixa é 24 cm², o comprimento da caixa, em metros, é: </string>
+    <string name="q5_f10">Dado log 3= 0,477, podemos afirmar que log 9000 é:</string>
 </resources>
