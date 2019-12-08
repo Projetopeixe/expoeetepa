@@ -17,6 +17,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
+        android:max="120"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
@@ -85,8 +86,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="66dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
