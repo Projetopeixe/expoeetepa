@@ -23,44 +23,64 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
     <string name="q1_f1">Calcule a expressão a seguir (x – 234 = y). Considerando X=801.</string>
     <string name="q2_f1">235 + 140 + 2 = z</string>
     <string name="q3_f1">2 x 2 x 2 x 2 x 2  x 10 -100</string>
     <string name="q4_f1">Qual é  o resultado da multiplicação a seguir: \n \n(804 x 0) x 777</string>
     <string name="q5_f1">Em um banheiro há uma parede com 15 fileiras com 10 azulejos e outra parede com 13 fileiras com 10. Informe a quantidade de azulejos desse banheiro. </string>
+
     <string name="q1_f2">Quanto é 10% de 1000?</string>
     <string name="q2_f2">Quanto é 25% de 10.000?</string>
     <string name="q3_f2">Uma escola recebeu 150 cadernos. Contando somente com a distribuição para os alunos do período da tarde foram 50% dos cadernos. Quantos sobraram?</string>
     <string name="q4_f2">Considere uma mamadeira com capacidade de 250ml. Com um litro de leite, é possível preparar quantas mamadeiras?</string>
     <string name="q5_f2">Maria tem 1,45 m de altura e seu irmão tem 1,27 m.  Quantos centímetros ela tem a mais que o irmão?</string>
+
     <string name="q1_f3">Qual o valor de x na expressão a seguir: \n45 - 35 - 25 - 15 = x.</string>
     <string name="q2_f3">Marlene está lendo um livro com 352 páginas. Em 3 horas de leitura, ela leu 48 páginas. Se ela mantiver o ritmo de leitura, quanto tempo levará para ler o livro todo?</string>
     <string name="q3_f3">Um navio foi abastecido com comida suficiente para alimentar 14 pessoas durante 45 dias. Se 18 pessoas embarcarem nesse navio, para quantos dias, no máximo, as reservas de alimento serão suficientes?</string>
     <string name="q4_f3">Um grupo de 14 amigos comprou 8 pizzas. Eles comeram todas as pizzas, sem sobrar nada. Se cada menino comeu uma pizza inteira e cada menina comeu meia pizza, quantas meninas havia no grupo?</string>
     <string name="q5_f3">Uma montadora de automóveis demora 8 dias para produzir 200 veículos, trabalhando 9 horas por dia. Quantos veículos montará em 15 dias, funcionando 12 horas por dia?</string>
+
     <string name="q1_f4">Uma escola tem 18 turmas e cada comporta, no máximo 34 alunos. Para o ano de 2019, foram preenchidas todas as vagas, e a direção da escola conseguiu organizar as turmas em três períodos, com quantidades iguais de alunos e sem sobrar nenhum. \nO total de alunos de cada período é:</string>
     <string name="q2_f4">Para alimentar 50 coelhos durante 15 dias são necessários 90 quilogramas de ração. Quantos coelhos é possível alimentar em 20 dias com 117 quilogramas de ração?</string>
     <string name="q3_f4">Milton vai preparar uma vitamina de leite com banana. Precisa de 250 mililitros de leite e uma banana para fazer o copo de vitamina. Para que Milton prepare 8 copos de vitamina, ele precisará de quantos litros de leite?</string>
     <string name="q4_f4">Em uma corrida de 100 metros entre dois amigos, um deles percorreu a distância em 22,5 segundos, e o outro em 23,34 segundos. O vencedor da corrida chegou à frente do outro em:</string>
     <string name="q5_f4">Em um jogo, o valor de cada ponto perdido é -4 e o valor cada ponto ganho é +3. Ana perdeu 13 pontos e ganhos 15 pontos. Fazendo os cálculos, pode-se verificar que o total de pontos de Ana é:</string>
+
     <string name="q1_f5">Determine o valor do ângulo abaixo</string>
     <string name="q2_f5">Qual o valor do ângulo abaixo?</string>
     <string name="q3_f5">Qual o valor de x no triângulo abaixo?</string>
     <string name="q4_f5">Qual o valor de y no triângulo abaixo?</string>
     <string name="q5_f5">Calcule o comprimento de uma circunferência, cujo raio mede 10 cm</string>
+
     <string name="q1_f6">Calcule o comprimento de uma circunferência, cujo o raio mede 2 cm:</string>
     <string name="q2_f6">Manoel é um fazendeiro que dispõe de certo capital para comprar certo número de carneiros. Pagando R$ 20,00 por carneiro, faltam-lhe R$ 40,00; e pagando R$ 16,00, sobram-lhe R$ 20,00. Quantos carneiros Manoel quer comprar?</string>
     <string name="q3_f6">Um rato está 30 metros à frente de um gato que o persegue. Enquanto o rato corre 8 metros, o gato corre 11 metros. Qual a distância que o gato terá de percorrer para alcançar o rato?</string>
     <string name="q4_f6">Calcule a média aritmética simples de 15;48;36</string>
     <string name="q5_f6">Calcule a média aritmética simples de 18;25;32</string>
+
     <string name="q1_f7">Quantas raízes a equação do 2° grau admite no máximo?</string>
     <string name="q2_f7">Em certa região, por causa das fortes geadas, o preço dos produtos agrícolas subiu 15%. A expressão que relaciona os preços anteriores x e os preços posteriores y a esse aumento é:</string>
     <string name="q3_f7">O custo para a produção de x unidades de certo produto é dado por C(x)=x²-50x + 2.500, com ≥ 0. O valor do custo mínimo é:</string>
     <string name="q4_f7">Dados a= 5 +√3 e b= 5-√3, determine: a × b</string>
     <string name="q5_f7">Qual o valor aproximado de (5√5).(√5^4)? (considere: √5≅2,2)</string>
+
     <string name="q1_f8">Adriana é a irmã mais velha do Claudio. A diferença entre as idades dos dois irmãos é de 5 anos e a sua soma é 35 anos. Qual a idade do Claudio? Qual a idade da Adriana?</string>
     <string name="q2_f8">As idades dos jogadores de uma equipe de futebol são: 22, 24, 27, 27, 25, 25, 25, 23, 24, 32, 28. Indique a moda</string>
     <string name="q3_f8">O preço do tomate no início do mês de fevereiro de 2011 em Goiânia era, em média, R$ 2,50. Aplicando o aumento de 18,2%, qual será seu novo valor médio, aproximadamente, em março?</string>
     <string name="q4_f8">As idades dos jogadores de uma equipe de futebol são: 22, 24, 27, 27, 25, 25, 25, 23, 24, 32, 28. Determine a média das idades.</string>
     <string name="q5_f8">Pedro e João jogaram uma partida de bolinhas de gude. No final, João tinha 20 bolinhas, que correspondiam a 8 bolinhas a mais que Pedro. João e Pedro tinham juntos:</string>
+
+    <string name="q1_f9">A soma de um número com seu quadrado é 90. Que número é esse?</string>
+    <string name="q2_f9">Número inteiro e positivo tal que seu quadrado menos o dobro desse número  seja igual a 48. A que número essa afirmação se refere?</string>
+    <string name="q3_f9">Oito cavalos disputam uma corrida. Quantas são as possibilidades de chegada para os 3 primeiros lugares?</string>
+    <string name="q4_f9">Isaura tem o dobro da idade de Juraci, que é um ano mais velha que Benedita. Sabendo que daqui a dois anos a soma das idades dos três será igual a 77 anos, qual a idade de Benedita daqui a 8 anos?</string>
+    <string name="q5_f9">Uma rampa lisa de 7 metros de comprimento faz ângulo de 25° com plano horizontal. Qual a altura máxima, em metros, dessa rampa? (seno 25° = 0,422)</string>
+
+    <string name="q1_f10">Numa escola de apenas 800 alunos, sabe-se que 200 deles gostam de pagode; 300 de rock e 130 de pagode e rock. Quantos alunos não gostam nem de pagode nem de rock?</string>
+    <string name="q2_f10"></string>
+    <string name="q3_f10"></string>
+    <string name="q4_f10"></string>
+    <string name="q5_f10"></string>
 </resources>
