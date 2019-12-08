@@ -41,8 +41,6 @@ public class ActivityPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private FirebaseAuth auth = FirebaseAuth.getInstance();
-
-    private TextView nome;
     private ImageView btnF1, btnF2, btnF3, btnF4, btnF5, btnF6, btnF7, btnF8, btnF9, btnF10;
 
 
@@ -52,7 +50,7 @@ public class ActivityPrincipal extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("");
+        setTitle("Easy Math");
 
         carregarBotoesFases();
 
@@ -200,7 +198,7 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF8 = findViewById(R.id.btnFase8);
         btnF9 = findViewById(R.id.btnFase9);
         btnF10 = findViewById(R.id.btnFase10);
-        nome = findViewById(R.id.nomeUserOption);
+
     }
 
     @Override
