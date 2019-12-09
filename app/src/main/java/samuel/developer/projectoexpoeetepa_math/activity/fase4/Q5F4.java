@@ -2,6 +2,7 @@ package samuel.developer.projectoexpoeetepa_math.activity.fase4;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class Q5F4 extends AppCompatActivity {
     private Button alternativaD;
     private ProgressBar timeLine;
     private MediaPlayer mediaPlayerCerta, mediaPlayerErrada;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,5 +154,8 @@ public class Q5F4 extends AppCompatActivity {
         builder.show();
     }
 
-    public void desbloquearFase(){}
+    public void desbloquearFase(){
+        SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+        banco.execSQL("UPDATE fases SET fase5 = 1");
+    }
 }

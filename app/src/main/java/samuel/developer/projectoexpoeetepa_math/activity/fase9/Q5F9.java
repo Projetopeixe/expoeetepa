@@ -2,6 +2,7 @@ package samuel.developer.projectoexpoeetepa_math.activity.fase9;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -154,5 +155,8 @@ public class Q5F9 extends AppCompatActivity {
         builder.show();
     }
 
-    public void desbloquearFase(){}
+    public void desbloquearFase(){
+        SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+        banco.execSQL("UPDATE fases SET fase10 = 1");
+    }
 }
