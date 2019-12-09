@@ -83,7 +83,6 @@ public class Q5F3 extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
                 desbloquearFase();
-                startActivity(intent);
                 finish();
             }
         });
