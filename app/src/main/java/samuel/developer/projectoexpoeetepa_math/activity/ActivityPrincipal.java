@@ -22,6 +22,9 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.util.concurrent.ExecutionException;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q1F1;
@@ -54,6 +57,18 @@ public class ActivityPrincipal extends AppCompatActivity
 
         carregarBotoesFases();
 
+
+        //Creating local database (SQLite)
+        try{
+            SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+            //Create Table fases
+            banco.execSQL("CREATE TABLE IF NOT EXISTS fases(" +
+                    "fase1 INT(2), fase2 INT(2), fase3 INT(2), fase4 INT(2), fase5 INT(2), fase6 INT(2), fase7 INT(2), fase8 INT(2), fase9 INT(2), fase10 INT(2))");
+            banco.execSQL("INSERT INTO fases(fase1, fase2, fase3, fase4, fase5, fase6, fase7, fase8, fase9, fase10) VALUES(1, 0, 0, 0, 0, 0, 0, 0, 0, 0)");
+            
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
         final ControllerFases controll = new ControllerFases();
         btnF1.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,7 @@
 package samuel.developer.projectoexpoeetepa_math.helper;
 
+import android.content.SharedPreferences;
+
 public class ControllerFases {
 
     int fase1 = 1;
@@ -12,6 +14,7 @@ public class ControllerFases {
     int fase8 = 0;
     int fase9 = 0;
     int fase10 = 0;
+
 
     public int getFase1() {
         return fase1;
