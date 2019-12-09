@@ -72,6 +72,7 @@ public class Q5F2 extends AppCompatActivity {
     }
 
     public void questaoCerta(){
+        executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acertouu!");
         builder.setMessage("Parabéns! Resposta Correta!");
@@ -89,6 +90,7 @@ public class Q5F2 extends AppCompatActivity {
     }
 
     public void questaoErrada(){
+        executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
         builder.setMessage("Que pena! Resposta Incorreta!");
