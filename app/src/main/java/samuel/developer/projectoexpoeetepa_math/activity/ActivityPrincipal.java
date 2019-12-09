@@ -85,6 +85,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF1 == 1) {
                         Intent intent = new Intent(getApplicationContext(), Q1F1.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_LONG).show();
                     }
@@ -105,7 +106,8 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF2 == 1) {
                         Intent intent = new Intent(getApplicationContext(), Q1F2.class);
                         startActivity(intent);
-                    }else {
+                        break;
+                    }else if (valorF2 == 0){
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_LONG).show();
                     }
                 }
@@ -125,6 +127,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF3 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F3.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_LONG).show();
                     }
@@ -144,6 +147,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if (valorF4 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F4.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_LONG).show();
                     }
@@ -163,6 +167,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF5 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F5.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_LONG).show();
                     }
@@ -183,6 +188,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF6 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F6.class);
                         startActivity(intent);
+                        break;
                     }else {
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_LONG).show();
                     }
@@ -203,6 +209,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if (valorF7 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F7.class);
                         startActivity(intent);
+                        break;
                     }else {
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_LONG).show();
                     }
@@ -223,6 +230,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF8 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F8.class);
                         startActivity(intent);
+                        break;
                     }else {
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_LONG).show();
                     }
@@ -243,6 +251,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if (valorF9 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F9.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_LONG).show();
                     }
@@ -263,6 +272,7 @@ public class ActivityPrincipal extends AppCompatActivity
                     if(valorF10 == 1){
                         Intent intent = new Intent(getApplicationContext(), Q1F10.class);
                         startActivity(intent);
+                        break;
                     }else{
                         Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_LONG).show();
                     }
