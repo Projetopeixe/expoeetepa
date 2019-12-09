@@ -1,11 +1,8 @@
 package samuel.developer.projectoexpoeetepa_math.activity.fase4;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Build;
-import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,7 +12,7 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 
-// olha direitinho
+
 public class Q1F4 extends AppCompatActivity {
 
     private Button alternativaA;
@@ -52,7 +49,7 @@ public class Q1F4 extends AppCompatActivity {
         alternativaD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                questaoErrada();
             }
         });
 
@@ -82,6 +79,8 @@ public class Q1F4 extends AppCompatActivity {
                 finish();
             }
         });
+        builder.create();
+        builder.show();
 
     }
     public void questaoErrada() {

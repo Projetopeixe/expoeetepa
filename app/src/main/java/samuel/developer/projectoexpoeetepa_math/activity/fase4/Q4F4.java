@@ -77,6 +77,8 @@ public class Q4F4 extends AppCompatActivity {
                 finish();
             }
         });
+        builder.create();
+        builder.show();
     }
 
     public void questaoErrada(){

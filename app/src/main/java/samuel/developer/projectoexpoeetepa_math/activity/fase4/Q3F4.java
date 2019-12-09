@@ -32,7 +32,7 @@ public class Q3F4 extends AppCompatActivity {
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoErrada();
+                questaoCerta();
             }
         });
         alternativaB.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class Q3F4 extends AppCompatActivity {
         alternativaC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoCerta();
+                questaoErrada();
             }
         });
         alternativaD.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +77,8 @@ public class Q3F4 extends AppCompatActivity {
                 finish();
             }
         });
+        builder.create();
+        builder.show();
     }
 
     public void questaoErrada(){
