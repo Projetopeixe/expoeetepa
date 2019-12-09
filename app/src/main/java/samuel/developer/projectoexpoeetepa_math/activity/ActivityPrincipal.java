@@ -1,6 +1,7 @@
 package samuel.developer.projectoexpoeetepa_math.activity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.icu.text.UnicodeSetSpanner;
 import android.media.Image;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -65,45 +67,67 @@ public class ActivityPrincipal extends AppCompatActivity
             banco.execSQL("CREATE TABLE IF NOT EXISTS fases(" +
                     "fase1 INT(2), fase2 INT(2), fase3 INT(2), fase4 INT(2), fase5 INT(2), fase6 INT(2), fase7 INT(2), fase8 INT(2), fase9 INT(2), fase10 INT(2))");
             banco.execSQL("INSERT INTO fases(fase1, fase2, fase3, fase4, fase5, fase6, fase7, fase8, fase9, fase10) VALUES(1, 0, 0, 0, 0, 0, 0, 0, 0, 0)");
+
             
         }catch (Exception e){
             e.printStackTrace();
         }
 
-        final ControllerFases controll = new ControllerFases();
         btnF1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if(controll.getFase1() == 1) {
-                    Intent intent = new Intent(getApplicationContext(), Q1F1.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase1 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+                while (c.moveToNext()){
+                    String  vF1 = c.getString(c.getColumnIndex("fase1"));
+                    int valorF1 = Integer.parseInt(vF1);
+                    if(valorF1 == 1) {
+                        Intent intent = new Intent(getApplicationContext(), Q1F1.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_LONG).show();
+                    }
                 }
+
             }
         });
 
         btnF2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase2() == 1) {
-                    Intent intent = new Intent(getApplicationContext(), Q1F2.class);
-                    startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase2 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+                while (c.moveToNext()){
+                    String vF2 = c.getString(c.getColumnIndex("fase2"));
+                    int valorF2 = Integer.parseInt(vF2);
+                    if(valorF2 == 1) {
+                        Intent intent = new Intent(getApplicationContext(), Q1F2.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_LONG).show();
+                    }
                 }
+
             }
         });
 
         btnF3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase3() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F3.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase3 FROM fases";
+                Cursor  c = banco.rawQuery(sql, null);
+                while (c.moveToNext()){
+                    String vF3 = c.getString(c.getColumnIndex("fase3"));
+                    int valorF3 = Integer.parseInt(vF3);
+                    if(valorF3 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F3.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
@@ -111,37 +135,57 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (controll.getFase4() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F4.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase4 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+                while (c.moveToNext()){
+                    String vF4 = c.getString(c.getColumnIndex("fase4"));
+                    int valorF4 = Integer.parseInt(vF4);
+                    if (valorF4 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F4.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_LONG).show();
+                    }
                 }
-
             }
         });
 
         btnF5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase5() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F5.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase5 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+                while (c.moveToNext()){
+                    String vF5 = c.getString(c.getColumnIndex("fase5"));
+                    int valorF5 = Integer.parseInt(vF5);
+                    if(valorF5 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F5.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_LONG).show();
+                    }
                 }
-
             }
         });
 
         btnF6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase6() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F6.class);
-                    startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase6 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+
+                while (c.moveToNext()){
+                    String vF6 = c.getString(c.getColumnIndex("fase6"));
+                    int valorF6 = Integer.parseInt(vF6);
+                    if(valorF6 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F6.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
@@ -149,11 +193,19 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (controll.getFase7() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F7.class);
-                    startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase7 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+
+                while (c.moveToNext()){
+                    String vF7 = c.getString(c.getColumnIndex("fase7"));
+                    int valorF7 = Integer.parseInt(vF7);
+                    if (valorF7 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F7.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
@@ -161,11 +213,19 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase8() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F8.class);
-                    startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase8 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+
+                while (c.moveToNext()){
+                    String vF8 = c.getString(c.getColumnIndex("fase8"));
+                    int valorF8 = Integer.parseInt(vF8);
+                    if(valorF8 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F8.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
@@ -173,11 +233,19 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (controll.getFase9() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F9.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase9 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+
+                while (c.moveToNext()){
+                    String vF9 = c.getString(c.getColumnIndex("fase9"));
+                    int valorF9 = Integer.parseInt(vF9);
+                    if (valorF9 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F9.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
@@ -185,11 +253,19 @@ public class ActivityPrincipal extends AppCompatActivity
         btnF10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(controll.getFase10() == 1){
-                    Intent intent = new Intent(getApplicationContext(), Q1F10.class);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_LONG).show();
+                SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
+                String sql = "SELECT fase10 FROM fases";
+                Cursor c = banco.rawQuery(sql, null);
+
+                while (c.moveToNext()){
+                    String vF10 = c.getString(c.getColumnIndex("fase10"));
+                    int valorF10 = Integer.parseInt(vF10);
+                    if(valorF10 == 1){
+                        Intent intent = new Intent(getApplicationContext(), Q1F10.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
