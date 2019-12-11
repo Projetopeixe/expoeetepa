@@ -52,8 +52,8 @@
 
     <Button
         android:id="@+id/alternativaB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
         android:layout_marginTop="148dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
@@ -68,8 +68,8 @@
 
     <Button
         android:id="@+id/alternativaC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:background="@drawable/bg_edit_text"
@@ -84,8 +84,8 @@
 
     <Button
         android:id="@+id/alternativaD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:background="@drawable/bg_edit_text"

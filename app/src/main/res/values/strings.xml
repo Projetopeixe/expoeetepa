@@ -25,8 +25,8 @@
     <string name="menu_send">Send</string>
 
     <string name="q1_f1">Calcule a expressão a seguir (x – 234 = y). Considerando X=801.</string>
-    <string name="q2_f1">Informe o valor de z na expressão: 235 + 140 + 2 = z</string>
-    <string name="q3_f1">Informe o valor da expressão: 2 x 2 x 2 x 2 x 2  x 10 -100</string>
+    <string name="q2_f1">Informe o valor de z na expressão:\n 235 + 140 + 2 = z</string>
+    <string name="q3_f1">Informe o valor da expressão:\n2 x 2 x 2 x 2 x 2  x 10 -100</string>
     <string name="q4_f1">Qual é  o resultado da multiplicação a seguir: \n \n(804 x 0) x 777</string>
     <string name="q5_f1">Em um banheiro há uma parede com 15 fileiras com 10 azulejos e outra parede com 13 fileiras com 10. Informe a quantidade de azulejos desse banheiro. </string>
 
@@ -64,7 +64,7 @@
     <string name="q2_f7">Em certa região, por causa das fortes geadas, o preço dos produtos agrícolas subiu 15%. A expressão que relaciona os preços anteriores x e os preços posteriores y a esse aumento é:</string>
     <string name="q3_f7">O custo para a produção de x unidades de certo produto é dado por C(x)=x²-50x + 2.500, com ≥ 0. O valor do custo mínimo é:</string>
     <string name="q4_f7">Dados a= 5 +√3 e b= 5-√3, determine: a × b</string>
-    <string name="q5_f7">Qual o valor aproximado de (5√5).(√5^4)? (considere: √5≅2,2)</string>
+    <string name="q5_f7">Qual o valor aproximado de (5√5).(√5^4)?\n(considere: √5≅2,2)</string>
 
     <string name="q1_f8">Adriana é a irmã mais velha do Claudio. A diferença entre as idades dos dois irmãos é de 5 anos e a sua soma é 35 anos. Qual a idade do Claudio? Qual a idade da Adriana?</string>
     <string name="q2_f8">As idades dos jogadores de uma equipe de futebol são: 22, 24, 27, 27, 25, 25, 25, 23, 24, 32, 28. Indique a moda</string>

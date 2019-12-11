@@ -90,13 +90,15 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="328dp"
-        android:layout_height="81dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
+        android:background="@drawable/bg_edit_text"
+        android:padding="8sp"
         android:text="@string/q1_f5"
         android:textColor="@android:color/black"
         android:textSize="26sp"
