@@ -74,14 +74,14 @@ public class Q5F9 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
-        builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Finalizar Fase", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
                 desbloquearFase();
-                finish();
+                faseConcluida();
             }
         });
         builder.create();
@@ -92,6 +92,7 @@ public class Q5F9 extends AppCompatActivity {
         executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
+        builder.setCancelable(false);
         builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
@@ -144,6 +145,7 @@ public class Q5F9 extends AppCompatActivity {
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acabou o seu tempo!");
+        builder.setCancelable(false);
         builder.setMessage("Para cada questão dessa fase há 3 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override
@@ -158,5 +160,20 @@ public class Q5F9 extends AppCompatActivity {
     public void desbloquearFase(){
         SQLiteDatabase banco = openOrCreateDatabase("app", MODE_PRIVATE, null);
         banco.execSQL("UPDATE fases SET fase10 = 1");
+    }
+
+    public void faseConcluida(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Fase Concluida!");
+        builder.setCancelable(false);
+        builder.setMessage("Parabéns! Você concluiu a nona fase e desbloqueou a décima!");
+        builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.create();
+        builder.show();
     }
 }

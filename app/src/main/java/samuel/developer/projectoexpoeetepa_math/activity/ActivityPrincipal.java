@@ -87,7 +87,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível!", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -108,7 +108,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else if (valorF2 == 0){
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 1!", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -129,7 +129,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 2!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -149,7 +149,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 3!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -169,7 +169,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 4!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -190,7 +190,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else {
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 5!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -211,7 +211,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else {
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 6!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -232,7 +232,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else {
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 7!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -253,7 +253,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 8!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -274,7 +274,7 @@ public class ActivityPrincipal extends AppCompatActivity
                         startActivity(intent);
                         break;
                     }else{
-                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Fase Indisponível! Vença a Fase 9!", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

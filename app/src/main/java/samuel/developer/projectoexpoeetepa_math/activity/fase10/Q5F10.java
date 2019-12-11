@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.ActivityPrincipal;
+import samuel.developer.projectoexpoeetepa_math.activity.FinishGame;
 import samuel.developer.projectoexpoeetepa_math.activity.fase9.Q2F9;
 
 public class Q5F10 extends AppCompatActivity {
@@ -74,14 +75,13 @@ public class Q5F10 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
-        builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Finalizar Game", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
                 finalizarGame();
-                finish();
             }
         });
         builder.create();
@@ -92,6 +92,7 @@ public class Q5F10 extends AppCompatActivity {
         executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
+        builder.setCancelable(false);
         builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
@@ -144,6 +145,7 @@ public class Q5F10 extends AppCompatActivity {
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acabou o seu tempo!");
+        builder.setCancelable(false);
         builder.setMessage("Para cada questão dessa fase há 3 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override
@@ -154,5 +156,9 @@ public class Q5F10 extends AppCompatActivity {
         builder.create();
         builder.show();
     }
-    public void finalizarGame(){}
+    public void finalizarGame(){
+        Intent intent = new Intent(Q5F10.this, FinishGame.class);
+        startActivity(intent);
+        finish();
+    }
 }

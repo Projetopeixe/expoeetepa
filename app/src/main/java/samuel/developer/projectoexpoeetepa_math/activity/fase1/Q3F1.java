@@ -76,6 +76,7 @@ public class Q3F1 extends AppCompatActivity {
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acertouu!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
@@ -93,6 +94,7 @@ public class Q3F1 extends AppCompatActivity {
         executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
+        builder.setCancelable(false);
         builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
@@ -140,6 +142,7 @@ public class Q3F1 extends AppCompatActivity {
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acabou o seu tempo!");
+        builder.setCancelable(false);
         builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override

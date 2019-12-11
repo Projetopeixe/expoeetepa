@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q2F1;
-// olha direitinho
 
 public class Q1F6 extends AppCompatActivity {
 
@@ -72,7 +71,8 @@ public class Q1F6 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
@@ -90,6 +90,7 @@ public class Q1F6 extends AppCompatActivity {
         executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
+        builder.setCancelable(false);
         builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
@@ -143,7 +144,8 @@ public class Q1F6 extends AppCompatActivity {
 
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acabou o seu tempo, negah!");
+        builder.setTitle("Acabou o seu tempo!");
+        builder.setCancelable(false);
         builder.setMessage("Para cada questão dessa fase há 2 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override

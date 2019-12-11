@@ -27,14 +27,12 @@ public class Q3F9 extends AppCompatActivity {
         setContentView(R.layout.activity_q3_f9);
         carregarComponentes();
         carregamentoTempo();
-
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 questaoErrada();
             }
         });
-
         alternativaB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +40,6 @@ public class Q3F9 extends AppCompatActivity {
 
             }
         });
-
         alternativaC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +47,6 @@ public class Q3F9 extends AppCompatActivity {
 
             }
         });
-
         alternativaD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +68,8 @@ public class Q3F9 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
         builder.setPositiveButton("Próxima Questão", new DialogInterface.OnClickListener() {
             @Override
@@ -90,6 +87,7 @@ public class Q3F9 extends AppCompatActivity {
         executarSomErrada();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Errou!");
+        builder.setCancelable(false);
         builder.setMessage("Que pena! Resposta Incorreta!");
         builder.setPositiveButton("Tentar Novamente", new DialogInterface.OnClickListener() {
             @Override
@@ -110,10 +108,8 @@ public class Q3F9 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
-
                                 }
                             });
-
                             try {
                                 Thread.sleep(1000);
                             } catch (InterruptedException   e) {
@@ -138,10 +134,10 @@ public class Q3F9 extends AppCompatActivity {
             mediaPlayerErrada.start();
         }
     }
-
     public void tempoEsgotado(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Acabou o seu tempo!");
+        builder.setCancelable(false);
         builder.setMessage("Para cada questão dessa fase há 3 min para ser respondida. Você demorou demais!\n");
         builder.setPositiveButton("Voltar ao menu principal", new DialogInterface.OnClickListener() {
             @Override
