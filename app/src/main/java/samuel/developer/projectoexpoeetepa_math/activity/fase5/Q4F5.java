@@ -114,7 +114,6 @@ public class Q4F5 extends AppCompatActivity {
                                     if(progresso == 120){
                                         tempoEsgotado();
                                     }
-
                                 }
                             });
 

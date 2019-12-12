@@ -73,7 +73,8 @@ public class Q5F5 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
+        builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
         builder.setPositiveButton("Finalizar Fase", new DialogInterface.OnClickListener() {
             @Override
