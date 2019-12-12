@@ -31,6 +31,7 @@ public class Q5F2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q5_f2);
         carregarComponentes();
+        carregamentoTempo();
         alternativaA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +75,7 @@ public class Q5F2 extends AppCompatActivity {
     public void questaoCerta(){
         executarSomCerta();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Acertouu!");
+        builder.setTitle("Acertou!");
         builder.setCancelable(false);
         builder.setMessage("Parabéns! Resposta Correta!");
         builder.setPositiveButton("Finalizar Fase", new DialogInterface.OnClickListener() {

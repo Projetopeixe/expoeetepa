@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/bg_edit_text"
@@ -26,7 +26,7 @@
         android:textColor="@android:color/black"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
 
@@ -76,7 +76,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_edit_text"
         android:text="100"
         android:textColor="@android:color/black"
@@ -84,13 +84,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alternativaA" />
+        app:layout_constraintTop_toBottomOf="@+id/alternativaA"
+        app:layout_constraintVertical_bias="0.288" />
 
     <Button
         android:id="@+id/alternativaD"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
         android:background="@drawable/bg_edit_text"
@@ -99,8 +100,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/alternativaB" />
+        app:layout_constraintTop_toBottomOf="@+id/alternativaB"
+        app:layout_constraintVertical_bias="0.288" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"

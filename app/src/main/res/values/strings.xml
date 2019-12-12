@@ -32,7 +32,7 @@
 
     <string name="q1_f2">Quanto é 10% de 1000?</string>
     <string name="q2_f2">Quanto é 25% de 10.000?</string>
-    <string name="q3_f2">Uma escola recebeu 150 cadernos. Contando somente com a distribuição para os alunos do período da tarde foram 50% dos cadernos. Quantos sobraram?</string>
+    <string name="q3_f2">Uma escola recebeu 150 cadernos.\n Contando somente com a distribuição para os alunos do período da tarde foram 50% dos cadernos. \nQuantos sobraram?</string>
     <string name="q4_f2">Considere uma mamadeira com capacidade de 250ml. Com um litro de leite, é possível preparar quantas mamadeiras?</string>
     <string name="q5_f2">Maria tem 1,45 m de altura e seu irmão tem 1,27 m.  Quantos centímetros ela tem a mais que o irmão?</string>
 
@@ -42,7 +42,7 @@
     <string name="q4_f3">Um grupo de 14 amigos comprou 8 pizzas. Eles comeram todas as pizzas, sem sobrar nada. Se cada menino comeu uma pizza inteira e cada menina comeu meia pizza, quantas meninas havia no grupo?</string>
     <string name="q5_f3">Uma montadora de automóveis demora 8 dias para produzir 200 veículos, trabalhando 9 horas por dia. Quantos veículos montará em 15 dias, funcionando 12 horas por dia?</string>
 
-    <string name="q1_f4">Uma escola tem 18 turmas e cada comporta, no máximo 34 alunos. Para o ano de 2019, foram preenchidas todas as vagas, e a direção da escola conseguiu organizar as turmas em três períodos, com quantidades iguais de alunos e sem sobrar nenhum. \nO total de alunos de cada período é:</string>
+    <string name="q1_f4">Uma escola tem 18 turmas e cada comporta, no máximo 34 alunos. Para o ano de 2019, foram preenchidas todas as vagas, e a direção da escola conseguiu organizar as turmas em três períodos, com quantidades iguais de alunos e sem sobrar nenhum. Informe a quantidade de alunos de cada período.</string>
     <string name="q2_f4">Um muro de 12 metros foi construído utilizando 2 160 tijolos. Caso queira construir um muro de 30 metros nas mesmas condições do anterior, quantos tijolos serão necessários? </string>
     <string name="q3_f4">Milton vai preparar uma vitamina de leite com banana. Precisa de 250 mililitros de leite e uma banana para fazer o copo de vitamina. Para que Milton prepare 8 copos de vitamina, ele precisará de quantos litros de leite?</string>
     <string name="q4_f4">Em uma corrida de 100 metros entre dois amigos, um deles percorreu a distância em 22,5 segundos, e o outro em 23,34 segundos. O vencedor da corrida chegou à frente do outro em:</string>
