@@ -84,6 +84,6 @@
     <string name="q4_f10">Uma caixa de fósforos tem 1 cm de altura e o comprimento tem 2 cm a mais que a largura. Se o volume da caixa é 24 cm², o comprimento da caixa, em metros, é: </string>
     <string name="q5_f10">Dado log 3= 0,477, podemos afirmar que log 9000 é:</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="equipe">Daniele Vieira Almeida\nJoão Victor Santos Júnior\nMaria Clara Silva dos Passos\nRita de Kássia Andrade de Oliveira\nSamuel Oliveira de Amorim</string>
+    <string name="apoio">Prof. Msc. Josivan Rodrigues dos Reis (UFOPA)\nCrystian Printes (UFOPA)\nLuis Victor Alves Veras (UFOPA)\nLuis Eduardo Trindade da Silva (UFOPA)</string>
 </resources>

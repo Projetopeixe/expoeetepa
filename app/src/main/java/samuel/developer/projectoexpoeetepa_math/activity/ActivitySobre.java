@@ -28,7 +28,7 @@ public class ActivitySobre extends AppCompatActivity {
                 .addGroup("Rita de Kássia Andrade de Oliveira")
                 .addGroup("Samuel Oliveira de Amorim")
                 .addGroup("Apoio: ")
-                .addGroup("Msc. Josivan Rodrigues dos Reis (UFOPA)")
+                .addGroup("Prof. Msc. Josivan Rodrigues dos Reis (UFOPA)")
                 .addGroup("Luiz Victor Alves Veras (UFOPA)")
                 .addGroup("Luiz Eduardo Trindade da Silva (UFOPA)")
 
