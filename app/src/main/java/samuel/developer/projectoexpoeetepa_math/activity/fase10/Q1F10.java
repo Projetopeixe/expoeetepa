@@ -9,9 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-
 import samuel.developer.projectoexpoeetepa_math.R;
-import samuel.developer.projectoexpoeetepa_math.activity.fase9.Q2F9;
 
 public class Q1F10 extends AppCompatActivity {
 
@@ -113,7 +111,9 @@ public class Q1F10 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
-
+                                    if(progresso == 180){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 
@@ -122,9 +122,7 @@ public class Q1F10 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 180){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

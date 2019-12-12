@@ -28,8 +28,10 @@ public class ActivitySobre extends AppCompatActivity {
                 .addGroup("Rita de Kássia Andrade de Oliveira")
                 .addGroup("Samuel Oliveira de Amorim")
                 .addGroup("Apoio: ")
-                .addGroup("Luiz Victor Alves Veras")
-                .addGroup("Luiz Eduardo Trindade da Silva")
+                .addGroup("Msc. Josivan Rodrigues dos Reis (UFOPA)")
+                .addGroup("Luiz Victor Alves Veras (UFOPA)")
+                .addGroup("Luiz Eduardo Trindade da Silva (UFOPA)")
+
                 .create();
         setContentView(sobre);
 

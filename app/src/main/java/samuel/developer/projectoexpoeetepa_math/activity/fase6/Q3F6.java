@@ -12,7 +12,7 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q2F1;
-// olha direitinho
+
 
 public class Q3F6 extends AppCompatActivity {
 
@@ -113,6 +113,9 @@ public class Q3F6 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
 
                                 }
                             });
@@ -122,9 +125,7 @@ public class Q3F6 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 120){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

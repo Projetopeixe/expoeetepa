@@ -116,6 +116,9 @@ public class Q1F1 extends AppCompatActivity {
                                 public void run() {
                                     timeLine.setProgress(progresso);
 
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 
@@ -124,9 +127,7 @@ public class Q1F1 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 120){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

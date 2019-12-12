@@ -9,12 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-
-// olha direitinho
-
 import samuel.developer.projectoexpoeetepa_math.R;
-import samuel.developer.projectoexpoeetepa_math.activity.fase2.Q4F2;
-
 public class Q3F3 extends AppCompatActivity {
 
     private Button alternativaA;
@@ -113,6 +108,9 @@ public class Q3F3 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
 
                                 }
                             });
@@ -122,9 +120,7 @@ public class Q3F3 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 120){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

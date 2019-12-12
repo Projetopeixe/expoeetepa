@@ -113,6 +113,9 @@ public class Q4F10 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 180){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 
@@ -121,9 +124,7 @@ public class Q4F10 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 180){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

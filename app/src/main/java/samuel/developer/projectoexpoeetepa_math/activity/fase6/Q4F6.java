@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
-// olha direitinho
 public class Q4F6 extends AppCompatActivity {
 
     private Button alternativaA;
@@ -111,6 +110,9 @@ public class Q4F6 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
 
                                 }
                             });
@@ -120,9 +122,7 @@ public class Q4F6 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 120){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }

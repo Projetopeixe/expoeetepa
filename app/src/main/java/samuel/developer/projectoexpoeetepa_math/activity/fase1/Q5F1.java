@@ -1,8 +1,6 @@
 package samuel.developer.projectoexpoeetepa_math.activity.fase1;
 
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
@@ -11,12 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-
-// olha direitinho
-
 import samuel.developer.projectoexpoeetepa_math.R;
-import samuel.developer.projectoexpoeetepa_math.activity.ActivityPrincipal;
-import samuel.developer.projectoexpoeetepa_math.helper.ControllerFases;
 
 public class Q5F1 extends AppCompatActivity {
 
@@ -115,6 +108,9 @@ public class Q5F1 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 

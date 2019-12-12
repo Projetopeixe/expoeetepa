@@ -3,6 +3,7 @@ package samuel.developer.projectoexpoeetepa_math.activity.fase2;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,8 +13,6 @@ import android.widget.ProgressBar;
 
 import samuel.developer.projectoexpoeetepa_math.R;
 import samuel.developer.projectoexpoeetepa_math.activity.fase1.Q2F1;
-
-// olha direitinho
 
 public class Q1F2 extends AppCompatActivity {
 
@@ -112,7 +111,9 @@ public class Q1F2 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
-
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 
@@ -121,13 +122,13 @@ public class Q1F2 extends AppCompatActivity {
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
                             }
-                            if(progresso == 120){
-                                tempoEsgotado();
-                            }
+
                         }
                     }
                 }
         ).start();
+
+
     }
 
     public void executarSomCerta(){

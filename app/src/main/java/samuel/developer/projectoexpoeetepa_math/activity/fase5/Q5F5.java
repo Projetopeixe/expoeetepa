@@ -111,6 +111,9 @@ public class Q5F5 extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     timeLine.setProgress(progresso);
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
                                 }
                             });
 

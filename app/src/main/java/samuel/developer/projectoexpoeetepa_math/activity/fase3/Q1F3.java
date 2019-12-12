@@ -115,6 +115,10 @@ public class Q1F3 extends AppCompatActivity {
                                 public void run() {
                                     timeLine.setProgress(progresso);
 
+                                    if(progresso == 120){
+                                        tempoEsgotado();
+                                    }
+
                                 }
                             });
 
@@ -122,9 +126,6 @@ public class Q1F3 extends AppCompatActivity {
                                 Thread.sleep(1000);
                             } catch (InterruptedException   e) {
                                 e.printStackTrace();
-                            }
-                            if(progresso == 120){
-                                tempoEsgotado();
                             }
                         }
                     }
