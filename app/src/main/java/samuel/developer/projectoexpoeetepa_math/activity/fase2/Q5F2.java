@@ -50,7 +50,7 @@ public class Q5F2 extends AppCompatActivity {
         alternativaC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoErrada();
+                questaoCerta();
 
             }
         });
@@ -58,7 +58,7 @@ public class Q5F2 extends AppCompatActivity {
         alternativaD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                questaoCerta();
+                questaoErrada();
             }
         });
     }
