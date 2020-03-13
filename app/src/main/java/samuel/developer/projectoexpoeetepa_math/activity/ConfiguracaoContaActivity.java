@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -46,6 +47,7 @@ public class ConfiguracaoContaActivity extends AppCompatActivity {
     private String identificadorUsuario;
     private EditText editNome;
     private ImageView imageAtualizarNome;
+    private TextView textoAguarde;
 
     private  String[] permissoesNecessarias = new String[]{
             Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -105,7 +107,10 @@ public class ConfiguracaoContaActivity extends AppCompatActivity {
                 boolean retorno = UsuarioFirebase.atualizarNomeUsuario(nome);
                 if (retorno){
                     Toast.makeText(ConfiguracaoContaActivity.this, "Nome Alterado com Sucesso!",
-                            Toast.LENGTH_SHORT).show();;
+                            Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(ConfiguracaoContaActivity.this, "Erro ao alterar nome de usuário!",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -153,6 +158,7 @@ public class ConfiguracaoContaActivity extends AppCompatActivity {
                     }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
                             Toast.makeText(ConfiguracaoContaActivity.this, "Sucesso ao fazer upload de imagem", Toast.LENGTH_SHORT).show();
 
                             Uri utl = taskSnapshot.getDownloadUrl();
@@ -205,6 +211,7 @@ public class ConfiguracaoContaActivity extends AppCompatActivity {
         storageReference = ConfiguracaoFirebase.getFirebaseStorage();
         editNome = findViewById(R.id.editNomeConfi);
         imageAtualizarNome = findViewById(R.id.imageAtualizarNomeUsuario);
+        textoAguarde = findViewById(R.id.textoAguarde);
     }
 
 }
