@@ -20,7 +20,7 @@ public class ActivitySobre extends AppCompatActivity {
                 .setImage(R.drawable.logo)
                 .setDescription(descricao)
                 .addGroup("Verifique os códigos")
-                .addGitHub("Projetopeixe/expoeetepa", "Veja o código fonte")
+                .addGitHub("Projetopeixe/exp oeetepa", "Veja o código fonte")
                 .addGroup("Desenvolvedores: ")
                 .addGroup("Daniele Vieira Almeida")
                 .addGroup("João Victor Santos Júnior")
