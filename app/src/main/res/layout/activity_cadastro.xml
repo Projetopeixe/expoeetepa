@@ -12,6 +12,23 @@
     android:background="@color/colorPrimary"
     tools:context=".activity.CadastroActivity">
 
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:id="@+id/btn_retornar_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#fff"
+            app:srcCompat="@drawable/ic_arrow_back_gray24dp" />
+    </Toolbar>
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imagemUsuario"
         android:layout_width="230dp"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="samuel.developer.projectoexpoeetepa_math">
+    package="samuel.developer.waiwai">
 
     <uses-feature
         android:name="android.hardware.camera2"
@@ -8,6 +8,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TelaCarregamento"
+        <activity android:name=".activity.fases.Fase3"></activity>
+        <activity android:name=".activity.fases.Fase2" />
+        <activity android:name=".activity.TraducaoPalavraDic" />
+        <activity
+            android:name=".activity.ActivityDicionario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TelaCarregamento"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,154 +41,7 @@
             android:parentActivityName=".activity.ActivityPrincipal"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.fase2.Q1F2"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase10.Q5F10"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase10.Q4F10"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase10.Q3F10"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase10.Q2F10"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase9.Q5F9"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase9.Q4F9"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase9.Q3F9"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase9.Q2F9"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase8.Q5F8"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase8.Q4F8"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase8.Q3F8"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase8.Q2F8"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase7.Q5F7"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase7.Q4F7"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase7.Q3F7"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase7.Q2F7"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase6.Q5F6"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase6.Q4F6"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase6.Q3F6"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase6.Q2F6"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase5.Q5F5"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase5.Q4F5"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase5.Q3F5"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase5.Q2F5"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase4.Q5F4"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase4.Q4F4"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase4.Q3F4"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase4.Q2F4"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase3.Q5F3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase3.Q4F3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase3.Q3F3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase3.Q2F3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase2.Q5F2"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase2.Q4F2"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase2.Q3F2"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase2.Q2F2"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase10.Q1F10"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase9.Q1F9"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase8.Q1F8"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase7.Q1F7"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase6.Q1F6"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase5.Q1F5"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase4.Q1F4"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase3.Q1F3"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase1.Q5F1"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase1.Q4F1"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase1.Q3F1"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase1.Q2F1"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.fase1.Q1F1"
+            android:name=".activity.fases.Fase1"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ConfiguracaoContaActivity"
@@ -196,9 +57,11 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.LoginActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" />
 
-        </activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
     </application>
 
 </manifest>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="lollipop">
+
+            <ImageView
+                android:id="@+id/btn_retornar_dic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#000"
+                app:srcCompat="@drawable/ic_close_black_24dp" />
+        </Toolbar>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageTematicaPalavra"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logomarca"
+            app:civ_border_color="#000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/alternativasBase"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_traducao_palavra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descricaoPalavra">
+
+            <LinearLayout
+                android:id="@+id/alternativaA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/alternativaB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32">
+
+                <TextView
+                    android:id="@+id/opcao1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Opção 01"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/linhadivisao" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alternativaB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alternativaA">
+
+                <TextView
+                    android:id="@+id/opcao2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Opção 02"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/linhadivisao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alternativaC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/alternativaB"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/opcao3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Opção 03"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/linhadivisao" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alternativaD"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/alternativaC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/alternativaC"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/opcao4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Opção 04"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:text="Próximo"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:background="@drawable/bg_btn_activity_fases"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/alternativasBase" />
+
+        <TextView
+            android:id="@+id/descricaoPalavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição da Palavra"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTematicaPalavra" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

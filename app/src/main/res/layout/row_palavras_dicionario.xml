@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagePeixe"
+        android:src="@drawable/ic_arco_flecha"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/namePalavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2sp"
+            android:ellipsize="marquee"
+            android:text="Palavra"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0B0B"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

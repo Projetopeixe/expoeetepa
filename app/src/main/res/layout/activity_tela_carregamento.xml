@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".activity.TelaCarregamento">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="0dp"
         android:layout_height="200dp"
-
         android:layout_marginTop="164dp"
-        android:src="@drawable/logo"
-        app:civ_border_color="#DFDADA"
+        android:src="@drawable/logomarca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

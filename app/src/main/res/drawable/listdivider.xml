@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:Android="http://schemas.Android.com/apk/res/Android"
+    xmlns:tools="http://schemas.android.com/tools"
+    Android:insetLeft="50dp"
+    Android:insetRight="50dp"
+    tools:ignore="NamespaceTypo">
+
+    <shape>
+        <solid Android:color="#fff" />
+        <corners Android:radius="2dp" />
+    </shape>
+
+</inset>
